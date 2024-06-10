@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
+*,*:before, :after{
+ margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html, body {
+    font-family: 'Figtree', sans-serif;
+    background: var(--yellow-color);
+}
+a {
+    text-decoration: none;
+    text-align: center;
+}
+a:hover {
+color: var(--white-color);
+}
+:root {
+    /* PRIMARY COLORS */
+    --yellow-color: hsl(47, 88%, 63%);
+    /* NEUTRAL COLORS */
+    --white-color: hsl(0, 0%, 100%);
+    --grey-color: hsl(0, 0%, 50%);
+    --black-color: hsl(0, 0%, 7%);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--yellow-color);
+    margin: 80px auto;
+}
+
+.card {
+    width: 400px;
+    height: 40vw;
+    background-color: var(--white-color);
+    border: 1px solid var(--black-color);
+    border-radius: 15px;
+    box-shadow: 9px 9px 2px rgba(0,0,0,0.9);
+}
+.small-card {
+    width: 70px;
+    height: 25px;
+    background-color: var(--yellow-color);
+    margin: 15px;
+    border-radius: 5px 5px 5px 5px;
+}
+.art-img {
+    width: 28.5vw;
+    margin-top: 10px;
+    margin-left: 16px;
+    margin-bottom: 20px;
+    border-radius: 7px 7px 7px 7px ;
+}
+.page-1 {
+    color: var(--grey-color);
+    padding-left: 15px;
+}
+p {
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+h1 {
+    padding-left: 15px;
+}
+h1:hover{
+    color: var(--yellow-color);
+    cursor: pointer;
+}
+.card-image {
+    display: flex;
+    margin-left: 16px;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.ava-img {
+    width: 38px;
+}
+@media screen and (max-width: 500px) {
+    .container {
+        width: 100%;
+    }
+    .card {
+        width: 60vw;
+        height: 85vh;
+
+    }
+    .art-img {
+        width: 54vw;
+    }
+}
+@media screen and (max-width: 800px) {
+    .container{
+        width: 100%;
+    }
+    .card{
+        width: 42vw;
+    }
+    .art-img{
+        width: 38vw;
+    }
+}
